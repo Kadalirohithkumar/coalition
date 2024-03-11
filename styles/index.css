@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"poppins";
+}
+
+
+nav{
+    background:transparent;
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font-size: 16px;
+}
+
+nav li a:hover{
+    background-color:rgba(135, 217, 220, 0.656) ;
+    transition: .6s;
+    border-radius: 10px;
+    color: rgb(103, 18, 18);
+}
+nav .menu{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-right: 40px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#home{
+    background-image:url('/images/hero.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   object-fit: cover;
+   
+    
+}
+
+#history{
+    background-image:url('/images/lam-middle-image.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#last{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.last{
+    background-image:url('/images/lam-tab-1.png');
+}
+.last2{
+    background-image: url('/images/lam-tab-2.png');
+}
+
+
+
+@media(max-width:1042px) {
+    nav .menu{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width:768px){
+   
+    nav .menu{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 77px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin-right: 0px;
+       
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+    }
+    nav ul.enable{
+        right: 0;
+    }
+    .logo{
+        font-size: 20px;
+    }
+}
